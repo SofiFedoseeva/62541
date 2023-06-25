@@ -26,6 +26,13 @@ hl {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.paragraph-4 {
+    font-size: 24pt;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 4px 3px green;
+}
+
 /*background: ;
 font-size: ;
 color: ;
