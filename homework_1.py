@@ -1,6 +1,6 @@
 def palindrome(a):
     b = len(a)
-    for i in range(l//2):
+    for i in range(b//2):
         if a[i] == a[-1-i]:
             return True
     return False
