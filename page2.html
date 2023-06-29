@@ -9,33 +9,24 @@
 <body>
     <h1>Вебсайт</h1>
     <form action="">
-        <a href="page1.html">Авторизация</a>
-        <a href="page2.html">Регистрация</a><br>
-        <style>
-            :root {
-                --color-shades-dark: rgb(25, 25, 25);
-            }
-                *{
-                box-sizing: border-box;
-            }
-            body {
-                font-family: Segoe UI, system-ui, -apple-system, sans-serif;
-                font-size: 1.6rem;
-            }
-            a {
-                --text-color: var(--color-shades-dark);
-                border-block-end: 3px solid var(--border-color, transparent);
-                color: var(--text-color);
-                display: inline-block;
-                margin-block-end: 0.5rem;
-                margin-inline-end: 0.5rem;
-                padding: 0.1rem;
-                text-decoration: none;
-            }
-            a:where(:hover, :focus) {
-                --border-color: var(--text-color);
-            }
-        </style>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Навигация по сайту</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="page1.html">Авторизация</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="page2.html">Регистрация</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <label class="lead" for="namefield">Имя</label><br>
         <input class="form-control" type="text" placeholder="Введите Ваше имя" id="namefield">
         <label class="lead" for="emailfield">Электронная почта</label><br>
