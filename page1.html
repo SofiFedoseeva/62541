@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Авторизация</title>
+</head>
+<body>
+    <h1>Вебсайт</h1>
+    <form action="">
+        <a href="page1.html">Авторизация</a>
+        <a href="page2.html">Регистрация</a><br>
+        <style>
+            :root {
+                --color-shades-dark: rgb(25, 25, 25);
+            }
+                *{
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Segoe UI, system-ui, -apple-system, sans-serif;
+                font-size: 1.6rem;
+            }
+            a {
+                --text-color: var(--color-shades-dark);
+                border-block-end: 3px solid var(--border-color, transparent);
+                color: var(--text-color);
+                display: inline-block;
+                margin-block-end: 0.5rem;
+                margin-inline-end: 0.5rem;
+                padding: 0.1rem;
+                text-decoration: none;
+            }
+            a:where(:hover, :focus) {
+                --border-color: var(--text-color);
+            }
+        </style>
+        <label class="lead" for="textfield">Логин</label><br>
+        <input class="form-control" type="text" placeholder="Логин" id="textfield">
+        <label class="lead" for="passfield">Пароль</label><br>
+        <input class="form-control" type="password" placeholder="Пароль" id="passfield"><br>
+        <button type="button" class="btn btn-success"> Войти</button><br>
+        <label class="lead" for="commfield">Проблемы со входом? </label><br>
+        <textarea class="form-control" name="comment" placeholder="Подробно опишите ту проблему, которая возникла у вас" id="commfield"></textarea>
+        <button type="button" class="btn btn-outline-primary">Отправить</button>
+    </form><br>
+</body>
+</html>
