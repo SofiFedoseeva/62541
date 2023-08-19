@@ -41,12 +41,7 @@ class Advertisements(models.Model):
             )
         return self.updated_at.strftime('%d:%m:%Y в %H:%M:%S')
     
-#    @admin.display(description='Картинка')
- #   def picture(self):
-#        from django.utils.html import format_html
- #       return format_html('<img src="%s" />' % self.img)
     
     class Meta:
         db_table = 'advertisements'
-        #vebrose_name = 'Объявления'
         verbose_name_plural = 'Объявления'
